@@ -6,7 +6,7 @@ const bodyElement = document.body;
 themeButton.addEventListener('click', () => {
   
   // 3. Whenever clicked, flip the "dark-theme" class on or off on the body
-  bodyElement.classList.toggle('dark-theme');
+   bodyElement.classList.toggle('dark-theme');
   
   // 4. Update the text inside the button dynamically so the user knows what's happening
   if (bodyElement.classList.contains('dark-theme')) {
