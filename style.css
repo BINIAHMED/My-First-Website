@@ -41,6 +41,16 @@ header {
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0,0,0,0.05);
 }
+/* When the body has the "dark-theme" class, invert the colors */
+body.dark-theme {
+  background-color: #1e293b;
+  color: #f8fafc;
+}
+
+body.dark-theme section {
+  background-color: #0f172a;
+  color: #f8fafc;
+}
 /* Target the nav container inside the header */
 header nav {
   display: flex;            /* Turns on Flexbox */
