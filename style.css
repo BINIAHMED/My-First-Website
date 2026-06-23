@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* --- MOBILE RESPONSIVE STYLES --- */
+@media (max-width: 600px) {
+  
+  /* On mobile, shrink the master container padding so content has more room */
+  .container {
+    padding: 10px;
+  }
+
+  /* Make our white content cards have less padding so text doesn't get squished */
+  section {
+    padding: 15px;
+  }
+
+  /* Turn the horizontal navigation into a vertical stack so fingers can tap easily */
+  header nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  /* Make the contact form button stretch full-width so it's easy to press */
+  input[type="submit"] {
+    width: 100%;
+  }
+}
+body {
+  background-color: #f0f4f8;
+  font-family: Arial, sans-serif;
+  color: #333333;
+}
+
+header {
+  background-color: #ffffff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+/* Target the nav container inside the header */
+header nav {
+  display: flex;            /* Turns on Flexbox */
+  justify-content: center;  /* Centers the links horizontally */
+  gap: 20px;                /* Adds perfectly even space between the links */
+}
+
+/* Let's make the links look like clean, clickable buttons instead of plain text */
+header nav a {
+  text-decoration: none;    /* Removes the ugly underline */
+  color: #1a73e8;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+/* This adds a subtle background hover effect when your mouse touches a link */
+header nav a:hover {
+  background-color: #e8f0fe;
+}
+
+h1 {
+  color: #1a73e8;
+}
+
+section {
+  background-color: #ffffff;
+  padding: 30px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border-left: 5px solid #1a73e8;
+}
+
+.section-title {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.section-title .text-blue {
+  color: #2b6cb0 !important;
+}
+
+.section-tile .text-orange {
+  color: #dd6b20 !important;
+}
+.container {
+  max-width: 800px;     /* Prevents the website from getting wider than 800 pixels */
+  margin: 0 auto;       /* The ultimate CSS trick to perfectly center a box on the screen */
+  padding: 20px;        /* Adds a safety cushion on the left/right sides for mobile screens */
+}
+/* Style the form container */
+form {
+  background-color: #f8fafc;
+  padding: 20px;
+  border-radius: 6px;
+  border: 1px solid #e2e8f0;
+  margin-top: 15px;
+}
+input[type="text"], input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0 16px 0;
+  border: 1px solid #cbd5e1;
+  border-radius: 4px;
+  box-sizing: border-box; /* Ensures padding doesn't mess up the width */
+}
+input[type="submit"] {
+  background-color: #1a73e8;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+input[type="submit"]:hover {
+  background-color: #1557b0;
+}
+/* Make the table stretch nicely and remove double borders */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+/* Style the headers and data cells */
+th, td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+/* Add a distinct background to the table headers */
+th {
+  background-color: #f1f5f9;
+  color: #333333;
+}
+
+/* Subtle striping effect: targets every even row */
+tr:nth-child(even) {
+  background-color: #f8fafc;
+}
